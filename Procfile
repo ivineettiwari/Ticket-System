@@ -1,3 +1,1 @@
-release: python manage.py migrate
-
-web: gunicorn test_project.wsgi --log-file -
+web: waitress-serve --port=$PORT test_project.wsgi:application

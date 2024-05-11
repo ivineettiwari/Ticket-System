@@ -11,6 +11,7 @@ import json# include this
 from myapp.forms import AppForm, LoginForm
 from myapp.authenticate import ModelBackend
 from django.core.mail import EmailMessage, send_mail, send_mass_mail
+from django.views.static import serve
 
 
 
