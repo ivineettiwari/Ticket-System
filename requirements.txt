@@ -29,4 +29,4 @@ uritemplate==4.1.1
 urllib3==2.2.1
 waitress==3.0.0
 whitenoise==6.1.0
-cgi
+pycgi
