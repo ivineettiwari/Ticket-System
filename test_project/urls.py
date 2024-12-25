@@ -33,8 +33,4 @@ urlpatterns = [
     path('login', view.login_view, name='login'),
     path('updatedelete', view.updateDelete),
     path('ticket_list', view.ticket_list, name='ticket_list')
-]
-
-# Serve static files during development with DEBUG=False
-if not settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
