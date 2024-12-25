@@ -25,7 +25,11 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["https://ticket-sys-tem-678a74989422.herokuapp.com", "ticket-sys-tem-678a74989422.herokuapp.com", "*"]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://ticket-sys-tem-678a74989422.herokuapp.com'
+]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.office365.com'
